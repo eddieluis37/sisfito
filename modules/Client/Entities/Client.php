@@ -13,11 +13,11 @@ class Client extends Model {
         'importador',
         'exportador',
         'productor',
-        'Seccionales_id'
+        'seccionales_id'
     ];
 
     public function seccional() {
-        return $this->belongsTo('Modules\Client\Entities\Seccional', 'Seccionales_id');
+        return $this->belongsTo('Modules\Client\Entities\Seccional', 'seccionales_id');
     }
 
 }

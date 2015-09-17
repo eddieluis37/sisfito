@@ -29,7 +29,7 @@
                                     <th>{{ trans('agreement::ui.status.name') }}</th>
                                     <th>{{ trans('client::ui.client.firstname_label') }}</th>
                                     <th>{{ trans('client::ui.client.lastname_label') }}</th>
-                                    <th>{{ trans('client::ui.client.passport_label') }}</th>
+                                    <th>{{ trans('client::ui.client.identificacion_label') }}</th>
                                     <th>{{ trans('seccional') }}</th>
                                     <th>{{ trans('agreement::ui.agreement.registration_label') }}</th>
                                     <th>{{ trans('agreement::ui.agreement.delivery_label') }}</th>
@@ -42,7 +42,7 @@
                                         <td>{{ $data->status}}</td>
                                         <td>{{ $data->firstname}}</td>
                                         <td>{{ $data->lastname}}</td>
-                                        <td>{{ $data->passport}}</td>
+                                        <td>{{ $data->identificacion}}</td>
                                         <td>{{ $data->seccional}}</td>
                                         <td>{{ $data->registration_date}}</td>
                                         <td>{{ $data->delivery_date}}</td>
@@ -55,7 +55,7 @@
                                     <th>{{ trans('agreement::ui.status.name') }}</th>
                                     <th>{{ trans('client::ui.client.firstname_label') }}</th>
                                     <th>{{ trans('client::ui.client.lastname_label') }}</th>
-                                    <th>{{ trans('client::ui.client.passport_label') }}</th>
+                                    <th>{{ trans('client::ui.client.identificacion_label') }}</th>
                                     <th>{{ trans('client::ui.seccional.name') }}</th>
                                     <th>{{ trans('agreement::ui.agreement.registration_label') }}</th>
                                     <th>{{ trans('agreement::ui.agreement.delivery_label') }}</th>

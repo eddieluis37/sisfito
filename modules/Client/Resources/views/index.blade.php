@@ -69,7 +69,7 @@
                                 <tr>
                                     <th>{{ trans('client::ui.client.firstname_label') }}</th>
                                     <th>{{ trans('client::ui.client.lastname_label') }}</th>
-                                    <th>{{ trans('client::ui.client.passport_label') }}</th>
+                                    <th>{{ trans('client::ui.client.identificacion_label') }}</th>
                                     <th>{{ trans('client::ui.seccional.name') }}</th>
                                     @if(Auth::user()->can(['update-clients', 'delete-clients']))
                                     <th>{{ trans('client::ui.client.operation_label') }}</th>

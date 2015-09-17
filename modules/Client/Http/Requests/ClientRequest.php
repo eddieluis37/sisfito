@@ -24,8 +24,8 @@ class ClientRequest extends FormRequest {
         return [
             'firstname' => 'required|string|alpha',
             'lastname' => 'required',
-            'passport' => 'required|size:5',
-            'Seccionales_id' => 'required|numeric'
+            'identificacion' => 'required|size:5',
+            'seccionales_id' => 'required|numeric'
         ];
     }
 

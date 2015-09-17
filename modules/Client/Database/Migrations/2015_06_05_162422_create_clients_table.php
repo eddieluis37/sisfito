@@ -17,7 +17,7 @@ class CreateClientsTable extends Migration {
             $table->increments('id');
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('passport', 12);
+            $table->string('identificacion', 15);
             $table->boolean('importador');
             $table->boolean('exportador');
             $table->boolean('productor');

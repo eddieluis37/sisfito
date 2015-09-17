@@ -14,9 +14,9 @@
 </div>
 
 <div class="form-group">
-    <label  class="col-lg-2 col-sm-2 control-label">{{ trans('client::ui.client.passport_label') }}</label>
+    <label  class="col-lg-2 col-sm-2 control-label">{{ trans('client::ui.client.identificacion_label') }}</label>
     <div class="col-lg-8">
-        {!! Form::text('passport', null, ['class' => 'form-control']) !!}
+        {!! Form::text('identificacion', null, ['class' => 'form-control']) !!}
     </div>
 </div>
 

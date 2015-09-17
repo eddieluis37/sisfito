@@ -12,7 +12,7 @@ class Dashboard extends Model {
             ->join('clients', 'agreements.client_id', '=', 'clients.id')
             ->join('seccionales', 'clients.seccionales_id', '=', 'seccionales.id')
             ->where('status.name', '=', 'Incumplido')
-            ->select('code', 'status.name as status', 'clients.firstname', 'clients.lastname', 'clients.passport',
+            ->select('code', 'status.name as status', 'clients.firstname', 'clients.lastname', 'clients.identificacion',
                 'seccionales.name as country', 'registration_date', 'delivery_date')
             ->get();
     }

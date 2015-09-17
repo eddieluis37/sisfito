@@ -31,9 +31,9 @@ class ClientController extends Controller {
 
         if(Auth::user()->can('create-clients')) {
 
-            $Seccionales = Seccional::orderBy('name', 'asc')->lists('name', 'id');
+            $seccionales = Seccional::orderBy('name', 'asc')->lists('name', 'id');
 
-            return view('client::create', compact('Seccionales'));
+            return view('client::create', compact('seccionales'));
         }
 
         return redirect('auth/logout');
@@ -63,9 +63,9 @@ class ClientController extends Controller {
 
             $client = Client::findOrFail($id);
 
-            $Seccionales = Seccional::orderBy('name', 'asc')->lists('name', 'id');
+            $seccionales = Seccional::orderBy('name', 'asc')->lists('name', 'id');
 
-            return view('client::edit', compact('client', 'Seccionales'));
+            return view('client::edit', compact('client', 'seccionales'));
         }
 
         return redirect('auth/logout');

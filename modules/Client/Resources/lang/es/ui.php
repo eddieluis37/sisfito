@@ -2,12 +2,12 @@
 
 return [
 
-    'seccional'               =>  [
+    'seccional'             =>  [
         'name'              =>  'Seccional',
         'names'             =>  'Seccionales',
-        'name_label'        =>  'Nombre',
+        'name_label'        =>  'Nombres',
         'operation_label'   =>  'Operaciones',
-        'new_seccional'       =>  'Nueva Seccional',
+        'new_seccional'     =>  'Nueva Seccional',
         'edit_country'      =>  'Editar Seccional',
         'button_update'     =>  'Actualizar',
         'button_delete'     =>  'Eliminar',
@@ -17,12 +17,12 @@ return [
         'message_update'    =>  'La seccional :name ha sido actualizado satisfactoriamente'
     ],
 
-    'client'                =>  [
-        'name'              =>  'Cliente',
-        'names'             =>  'Clientes',
-        'firstname_label'   =>  'Nombre',
-        'lastname_label'    =>  'Apellidos',
-        'identificacion_label'    =>  'Número Identificacion',
+    'client'                    =>  [
+        'name'                  =>  'Cliente',
+        'names'                 =>  'Clientes',
+        'firstname_label'       =>  'Nombres',
+        'lastname_label'        =>  'Apellidos',
+        'identificacion_label'  =>  'Identificación',
         'operation_label'   =>  'Operaciones',
         'new_client'        =>  'Nuevo Cliente',
         'edit_client'       =>  'Editar Cliente',

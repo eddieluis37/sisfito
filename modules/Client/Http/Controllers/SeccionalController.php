@@ -15,11 +15,11 @@ class SeccionalController extends Controller {
 	
 	public function index() {
 
-        if(Auth::user()->can('read-Seccionales')) {
+        if(Auth::user()->can('read-seccionales')) {
 
-        $Seccionales = Seccional::all();
+        $seccionales = Seccional::all();
 
-		return view('client::seccional.index', compact('Seccionales'));
+		return view('client::seccional.index', compact('seccionales'));
         }
 
         return redirect('auth/logout');
@@ -27,7 +27,7 @@ class SeccionalController extends Controller {
 
     public function create() {
 
-        if(Auth::user()->can('create-Seccionales')) {
+        if(Auth::user()->can('create-seccionales')) {
 
             return view('client::seccional.create');
         }
@@ -37,7 +37,7 @@ class SeccionalController extends Controller {
 
     public function store(SeccionalRequest $request) {
 
-        if(Auth::user()->can('create-Seccionales')) {
+        if(Auth::user()->can('create-seccionales')) {
 
             $data = Seccional::create($request->all());
 
