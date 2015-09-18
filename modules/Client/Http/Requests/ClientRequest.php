@@ -25,6 +25,7 @@ class ClientRequest extends FormRequest {
             'firstname' => 'required|string|alpha',
             'lastname' => 'required',
             'identificacion' => 'required|size:5',
+            'exportador' => 'required',
             'seccionales_id' => 'required|numeric'
         ];
     }
