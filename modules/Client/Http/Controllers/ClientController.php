@@ -13,8 +13,20 @@ class ClientController extends Controller {
 
         $this->middleware('auth');
     }
-	
-	public function index(){
+
+    public function show(){
+
+        if(Auth::user()->can('read-clients')) {
+
+                $clients = Client::onlyTrashed()->get();
+               return view('client::index', compact('clients'));
+
+        }
+        return redirect('auth/logout');
+    }
+
+
+    public function index(){
 
         if(Auth::user()->can('read-clients')) {
 
@@ -106,5 +118,11 @@ class ClientController extends Controller {
 
         return redirect('auth/logout');
     }
-	
+
+    public function trashed(){
+        if(Auth::user()->can('trashed-clients')) {
+            Client::onlyTrashed();
+        }
+    }
+
 }

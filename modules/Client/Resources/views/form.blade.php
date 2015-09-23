@@ -21,21 +21,6 @@
 </div>
 
 <div class="form-group">
-    <label  class="col-lg-2 col-sm-2 control-label">{{'Productor :'}}</label>
-        {!! Form::checkbox('productor', 'value')!!}
-</div>
-
-<div class="form-group">
-    <label  class="col-lg-2 col-sm-2 control-label">{{'Exportador'}}</label>
-    {!! Form::checkbox('exportador', null, ['class' => 'form-control']) !!}
-</div>
-
-<div class="form-group">
-    <label  class="col-lg-2 col-sm-2 control-label">{{'Importador'}}</label>
-    {!! Form::checkbox('importador', 'value')!!}
-</div>
-
-<div class="form-group">
     <label  class="col-lg-2 col-sm-2 control-label">{{ trans('client::ui.seccional.name') }}</label>
     <div class="col-lg-8">
 
@@ -45,10 +30,23 @@
 </div>
 
 <div class="form-group">
+    <label  class="col-lg-2 col-sm-2 control-label">{{ trans('client::ui.client.productor_label') }}</label>
+    {!! Form::checkbox('productor', 1, null, ['class' => 'field']) !!}
+</div>
+
+<div class="form-group">
+    <label  class="col-lg-2 col-sm-2 control-label">{{ trans('client::ui.client.exportador_label') }}</label>
+    {!! Form::checkbox('exportador', 1, null, ['class' => 'field']) !!}
+</div>
+
+<div class="form-group">
+    <label  class="col-lg-2 col-sm-2 control-label">{{trans('client::ui.client.importador_label')}}</label>
+    {!! Form::checkbox('importador', 1, null, ['class' => 'field']) !!}
+</div>
+
+<div class="form-group">
     <div class="col-lg-offset-2 col-lg-8">
-
         {!! Form::submit($button, ['class' => 'btn btn-primary']) !!}
-
     </div>
 </div>
 

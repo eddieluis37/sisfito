@@ -54,7 +54,7 @@ class SeccionalController extends Controller {
 
     public function edit($id) {
 
-        if(Auth::user()->can('update-Seccionales')) {
+        if(Auth::user()->can('update-seccionales')) {
 
             $seccional = Seccional::findOrFail($id);
 
@@ -66,7 +66,7 @@ class SeccionalController extends Controller {
 
     public function update($id, SeccionalRequest $request) {
 
-        if(Auth::user()->can('update-Seccionales')) {
+        if(Auth::user()->can('update-seccionales')) {
 
             $seccional = Seccional::findOrFail($id);
 
@@ -82,7 +82,7 @@ class SeccionalController extends Controller {
 
     public function destroy($id) {
 
-        if(Auth::user()->can('delete-Seccionales')) {
+        if(Auth::user()->can('delete-seccionales')) {
 
         $seccional = Seccional::findOrFail($id);
 

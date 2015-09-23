@@ -30,5 +30,4 @@ class UserRequest extends FormRequest {
 			'role_id' => 'required'
 		];
 	}
-
 }

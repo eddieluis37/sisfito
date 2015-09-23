@@ -18,11 +18,12 @@ class CreateClientsTable extends Migration {
             $table->string('firstname');
             $table->string('lastname');
             $table->string('identificacion', 15);
-            $table->boolean('importador');
-            $table->boolean('exportador');
             $table->boolean('productor');
+            $table->boolean('exportador');
+            $table->boolean('importador');
             $table->integer('seccionales_id')->unsigned();
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('seccionales_id')
                   ->references('id')
                   ->on('seccionales');

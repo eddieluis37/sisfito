@@ -8,6 +8,6 @@ Route::group(['prefix' => 'client', 'namespace' => 'Modules\Client\Http\Controll
     Route::get('/{client}/edit', ['as' => 'client.edit', 'uses' => 'ClientController@edit']);
     Route::put('/{client}', ['as' => 'client.update', 'uses' => 'ClientController@update']);
     Route::delete('/{client}', ['as' => 'client.destroy', 'uses' => 'ClientController@destroy']);
-
     Route::resource('seccional', 'SeccionalController');
+    Route::get('/{show}', ['as' => 'client.show', 'uses' => 'ClientController@show']);
 });

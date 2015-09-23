@@ -13,7 +13,7 @@
 
                             {!! Form::model($client, ['method' => 'PUT', 'class' => 'cmxform form-horizontal', 'id' => 'clientForm', 'route' => ['client.update', $client->id]]) !!}
 
-                            @include('client::form', array('client' => $client) + compact('Seccionales'), ['button' => trans('client::ui.client.button_update')])
+                            @include('client::form', array('client' => $client) + compact('seccionales'), ['button' => trans('client::ui.client.button_update')])
 
                             {!! Form::close() !!}
                         </div>

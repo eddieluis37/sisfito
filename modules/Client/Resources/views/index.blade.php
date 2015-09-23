@@ -25,6 +25,7 @@
                         <div class="adv-table">
                             @if(Auth::user()->can('create-clients'))
                                 <a href="{{ url('client/create') }}"><button class="btn btn-primary" type="button"><i class="fa fa-plus-circle"></i> {{ trans("client::ui.client.button_add") }}</button></a>
+                                <a href="{{ url('client/show') }}"><button class="btn btn-primary" type="button"><i class="fa fa-plus-circle"></i> {{ trans("client::ui.client.button_trashed") }}</button></a>
                             @endif
                             <table  class="display table table-bordered table-striped" id="dynamic-table">
                                 <thead>
@@ -33,6 +34,9 @@
                                     <th>{{ trans('client::ui.client.lastname_label') }}</th>
                                     <th>{{ trans('client::ui.client.identificacion_label') }}</th>
                                     <th>{{ trans('client::ui.seccional.name') }}</th>
+                                    <th>{{ trans('client::ui.client.productor_label') }}</th>
+                                    <th>{{ trans('client::ui.client.exportador_label') }}</th>
+                                    <th>{{ trans('client::ui.client.importador_label') }}</th>
                                     @if(Auth::user()->can(['update-clients', 'delete-clients']))
                                     <th>{{ trans('client::ui.client.operation_label') }}</th>
                                     @endif
@@ -45,6 +49,9 @@
                                         <td>{{ $client->lastname }}</td>
                                         <td>{{ $client->identificacion }}</td>
                                         <td>{{ $client->seccional->name }}</td>
+                                        <td>{{ $client->productor}}</td>
+                                        <td>{{ $client->exportador}}</td>
+                                        <td>{{ $client->importador}}</td>
                                         @if(Auth::user()->can(['update-clients', 'delete-clients']))
                                         <td>
                                             <p>

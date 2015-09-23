@@ -1,12 +1,15 @@
-    <?php namespace Modules\Client\Entities;
+<?php namespace Modules\Client\Entities;
    
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Client extends Model {
 
     protected $table = 'clients';
+    use SoftDeletes;
 
     protected $fillable = [
+
         'firstname',
         'lastname',
         'identificacion',
